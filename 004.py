@@ -1,0 +1,11 @@
+info = input('digite alguma coisa: ')
+print()
+print('o tipo primitivo desse valor é: ')
+print()
+print('so tem espassos: ', info.isspace())
+print('é um numero: ', info.isnumeric())
+print('é alfabetico: ', info.isalpha())
+print('é alfanumerico: ', info.isalnum())
+print('é maiúsculo: ', info.isupper())
+print('é minúsculo: ', info.islower())
+print('é capitalizado: ', info.istitle()) #capitalizada é quando a palavra tem letras maiúsculas e minúsculas na sua composição.
