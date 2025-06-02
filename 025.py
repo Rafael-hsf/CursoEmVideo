@@ -4,6 +4,13 @@ nome = str(input('digite seu nome completo: '))
 nome1 = nome.find('Silva')
 print()
 if nome1 != -1:
-    print('Seu nome tem o nome Silva!')
+    print('Seu nome tem Silva!')
 else:
-    print('Seu nome não tem o nome Silva')
+    print('Seu nome não tem Silva')
+
+print()
+print('='*50)
+print()
+
+nome = str(input('digite seu nome completo: '))
+print('Seu nome tem Silva ? {}'.format('silva' in nome.lower()))
