@@ -10,3 +10,22 @@ if num == sort:
     print('Parabens você acertou o numero sorteado!')
 else:
     print('Que pena você errou, mas tente outra vez!')
+
+print()
+print('='*80)
+print()
+
+from random import randint
+from time import sleep
+computador = randint(1, 5) #Faz o computadr pensar
+print('-=-'*20)
+print('Vou pensar em um numero entre 0 e 5. Tente adivinhar...')
+print('-=-'*20)
+
+jogador = int(input('Em que numero eu pensei ? ')) #Jogador tenta adivinhar
+print('PROCESSANDO...')
+sleep(3)
+if jogador == computador:
+    print('PARABÉNS. Você conseguiu me vencer!')
+else:
+    print('GANHEI. Eu pensei no numero {} e não no numero{}'.format(computador, jogador))
