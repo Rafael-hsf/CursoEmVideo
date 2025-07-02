@@ -29,16 +29,16 @@
 
 #PARTE PRÁTICA
 
-for c in range(0, 6) #SE VOCÊ QUISER QUE O COMANDO SE REPITA 6 VEZES VOCÊ PRECISA COLOCAR DE 0 A 6, PORQUE SE VOCÊ COLOCAR DE 1 A 6 ELE VAI REPETIR APENAS 5 VEZES, IGNORANDO A ULTIMA
+for c in range(0, 6): #SE VOCÊ QUISER QUE O COMANDO SE REPITA 6 VEZES VOCÊ PRECISA COLOCAR DE 0 A 6, PORQUE SE VOCÊ COLOCAR DE 1 A 6 ELE VAI REPETIR APENAS 5 VEZES, IGNORANDO A ULTIMA
     print('Oi')
 print('FIM')
 
-for c in range(0, 6) #JA NA CONTAGEM SE VOCÊ INICIAR DO 0 A CONTAGEM VAI SE INICIAR NO 0, SE QUISER QUE INICIE NO 1 VAI PRECISAR INICIAR COM 1 E FINALIZAR COM UM AMAIS, EX: CONTAR DE 1 A 5 - (1, 6)
+for c in range(0, 6): #JA NA CONTAGEM SE VOCÊ INICIAR DO 0 A CONTAGEM VAI SE INICIAR NO 0, SE QUISER QUE INICIE NO 1 VAI PRECISAR INICIAR COM 1 E FINALIZAR COM UM AMAIS, EX: CONTAR DE 1 A 5 - (1, 6)
     print(c)
 print('FIM')
 
 n = int(input('digite um numero: '))
-for c in range(0, n+1)
+for c in range(0, n+1):
     print(c)
 print('FIM')
 
@@ -49,7 +49,7 @@ for c in range(i, f+1, p): #Nesse comando a contagem vai ser realizada do inicio
     print(c)
 print('FIM')
 
-for c in range(0, 3)
+for c in range(0, 3):
     n = int(input('digite um valor: ')) #Nesse comando o programa vai pedir pra o usuario inserir o valor a quantidade de vezes estipulada, nesse caso 3.
 print('FIM')
 
