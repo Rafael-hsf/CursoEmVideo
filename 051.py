@@ -2,18 +2,18 @@
 #termos dessa progressão
 from sys import exit
 termo = int(input('digite o numero que iniciara a progressão aritimetica: '))
-print('agora preciso que você me indique se a razão vai ser positiva ou negativa, selecione: \n[1] positiva \n[2] negativa')
-razao = int(input())
-if razao != 1 and razao != 2:
-    print('Opção invalida')
-exit()
 valor = int(input('Agora informe o valor da razão: '))
-for c in range(1, 11):
-    if razao == 1:
-        termo += valor
-        (print(termo))
-    elif razao == 2:
-        termo -= valor
-        print(termo)
-    else:
-        print('Opção invalida')
+for c in range(termo, 11, valor):
+    print('{}'.format(c))
+print()
+print('-=-'*30)
+print()
+
+# SOLUÇÃO DO GUANABARA
+
+primeiro = int(input('Primeiro termo: '))
+razão = int(input('Razão: '))
+decimo = primeiro + (10 - 1) * razão
+for c in range (primeiro, decimo + razão, razão):
+    print('{}'.format(c), end=' → ')
+print('ACABOU')

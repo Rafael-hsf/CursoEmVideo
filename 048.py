@@ -6,6 +6,8 @@ for c in range(1, 501):
 print()
 print("a soma dos numeros ímpares multiplos de 3 entre 1 e 500 é: {}.".format(soma))
 print()
+
+#SOLUÇÃO DO GUANABARA
 print('-=-'*30)
 print()
 soma = 0
