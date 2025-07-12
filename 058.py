@@ -10,6 +10,7 @@ if escolha != num:
 while escolha != num:
     if escolha != num:
         esc += 1
+
     print('Escolha errada!')
     escolha = int(input('Tente novamente: '))
 print('E com {} palpites VOCÊ ACERTOU!!'.format(esc))
