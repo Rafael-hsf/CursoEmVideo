@@ -6,6 +6,13 @@ while sexo != 'M' and sexo != 'F':
     print('Opção invalida. tente novamente.')
     sexo = str(input('Digite novamente seu sexo: [M/F] ')).upper()
 print('OBRIGADO!')
+print('-=-'*30)
 
+#SOLUÇÃO DO GUANABARA
+
+sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
+while sexo not in 'MmFf':
+    sexo = str(input('Dados invalidos, por favor informe seu sexo: ')).strip().upper()[0]
+print('sexo {} registrado com sucesso!'.format(sexo))
 
 

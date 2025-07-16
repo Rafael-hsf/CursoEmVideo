@@ -13,5 +13,27 @@ while escolha != num:
 
     print('Escolha errada!')
     escolha = int(input('Tente novamente: '))
+print()
 print('E com {} palpites VOCÊ ACERTOU!!'.format(esc))
+print('-=-'*30)
+
+#SOLUÇÃO DO GUANABARA
+
+from random import randint
+computador =  randint(1, 10)
+print('Sou seu computador, acabei de pensar em um numero de 0 a 10, sera que você consegue adivinhar qual é ?')
+acertou = False
+palpites = 0
+while not acertou:
+    jogador = int(input('Qual é o seu palpite ? '))
+    palpites += 1
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador < computador:
+            print('Mais... Tente novamente!')
+        else:
+            print('Menos... Tente novamente!')
+print('Acertou com {} tentativas'.format(palpites))
+
 
