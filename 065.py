@@ -40,4 +40,4 @@ while resp in 'Ss':
 media = soma / quant
 print('Você digitou {} números e a média foi {}'.format(quant, media))
 print('O maior número foi {} e o menor foi {}'.format(maior, menor))
-
+ 
