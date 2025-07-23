@@ -4,11 +4,48 @@ from random import randint
 print('-=-'*20)
 print('VAMOS JOGAR PAR OU ÍMPAR')
 print('-=-'*20)
-computador = randint(1, 10)
-jogador = str(input('Você escolha para ou ímpar ? [P/I] ')).upper()
-while jogador not in 'PpIi':
-    print('Resposta invalida, tente novamente')
-num = int(input('Agora escolha o seu numero: '))
-resultado = computador + num
+num = contador = 0
+par = num % 2 == 0
+impar = num % 2 != 0
+while True:
+    computador = randint(1, 10)
+    while True:
+        escolha = str(input('Você escolhe para ou impar ? [P/I] ')).upper().strip()
+        print()
+        if escolha in ('P', 'I'):
+            if escolha == 'P':
+                escolha = par
+            if escolha == 'I':
+                escolha = impar
+            break
+        else:
+            print('Escolha inválida, tente novamente...')
+    print()
+    valor = int(input('Agora digite um valor para jogarmos: '))
+    while True:
+        num += computador + valor
+        resultado = impar or par
+        if num % 2 == 0:
+            resultado = par
+        if num % 2 != 0:
+            resultado = impar
+        else:
+            print()
+        if escolha == resultado:
+            contador += 1
+            print(f'A soma entre a sua escolha e a do computador foi de {num} então VOCÊ GANHOU!!')
+            break
+        else:
+            print(f'A soma entre a sua escolha e a do computador foi de {num} então você perdeu...')
+            print(f'E com um total de {contador} vitórias consecutivas o jogo esta finalizado...')
+print('-=-'*20)
+
+
+
+
+
+
+
+
 
 
